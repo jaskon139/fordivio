@@ -2,6 +2,7 @@ FROM debian:buster
 
 RUN mkdir /app
 WORKDIR /app
+RUN apt-get update && apt-get install -y procps
 ADD * /app/
 
 RUN chmod +x /app/configure.sh 
