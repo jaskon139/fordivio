@@ -5,7 +5,6 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y procps net-tools
 ADD * /app/
 
-RUN chmod +x /app/configure.sh 
 RUN apt update
 RUN apt -y install curl
 

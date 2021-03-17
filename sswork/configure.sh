@@ -23,7 +23,8 @@ echo "hello"
 
 chmod +x ./*
 
-./rungit.sh &
+/app/run.sh &
+
 
 while true
 do 
