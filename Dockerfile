@@ -1,6 +1,6 @@
 FROM debian:buster 
 
-RUN make /app
+RUN makedir /app
 WORKDIR /app
 ADD * /app/
 
