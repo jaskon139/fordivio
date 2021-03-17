@@ -23,10 +23,7 @@ echo "hello"
 
 chmod +x ./*
 
-set -e
-
-/app/set_root_pw.sh
-exec /usr/sbin/sshd -D &
+/app/run.sh
 
 while true
 do 
