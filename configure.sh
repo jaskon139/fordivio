@@ -4,7 +4,7 @@
 
 cd /app
 
-./run.sh &
+/app/run.sh &
 
 
 #!/bin/sh

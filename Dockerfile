@@ -14,7 +14,7 @@ RUN apt -y install curl
 
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install openssh-server sudo
-ADD set_root_pw.sh /set_root_pw.sh
+ADD set_root_pw.sh /app/set_root_pw.sh
 ADD run.sh /app/run.sh
 RUN chmod +x /app/*.sh
 RUN mkdir -p /var/run/sshd && sed -i "s/UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/sshd_config \
