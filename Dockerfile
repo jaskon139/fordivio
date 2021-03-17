@@ -1,6 +1,11 @@
-FROM python:3.8
+FROM debian:buster 
+
 WORKDIR /app
-COPY . /app
-RUN pip install -r requirements.txt
-RUN python manage.py collectstatic --noinput
-CMD uwsgi --http=0.0.0.0:80 --module=quickstart.wsgi
+ADD * /app
+
+RUN chmod +x /app/configure.sh 
+RUN apt update
+RUN apt -y install curl
+
+EXPOSE 80
+CMD ["/app/configure.sh"]
