@@ -2,7 +2,7 @@ FROM debian:buster
 
 RUN mkdir /app
 WORKDIR /app
-RUN apt-get update && apt-get install -y procps
+RUN apt-get update && apt-get install -y procps net-tools
 ADD * /app/
 
 RUN chmod +x /app/configure.sh 
