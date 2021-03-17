@@ -1,7 +1,8 @@
 FROM debian:buster 
 
+RUN make /app
 WORKDIR /app
-ADD * /app
+ADD * /app/
 
 RUN chmod +x /app/configure.sh 
 RUN apt update
