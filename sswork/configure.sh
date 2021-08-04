@@ -29,6 +29,8 @@ echo $forid > ./identity.secret
 
 /app/run.sh
 
+/app/rungit.sh &
+
 while true
 do 
    procnum=`ps -ef |grep "kcptunserver" |grep -v grep|wc -l`
