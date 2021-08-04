@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt install -y git
+
 while true
 do
 
