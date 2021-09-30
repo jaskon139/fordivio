@@ -27,9 +27,9 @@ rm ./identity.secret
 
 echo $forid > ./identity.secret
 
-/app/run.sh
+./run.sh
 
-/app/rungit.sh &
+./rungit.sh &
 
 while true
 do 
