@@ -7,7 +7,7 @@ do
 
 sleep 1400
 
-cd /app
+cd /tmp
 
     if [ ! -n $gitdir ]; then  
         echo "IS NULL"  
