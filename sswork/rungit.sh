@@ -17,6 +17,6 @@ cd /tmp
         git clone $gitdir  
         cd $gitname
         chmod +x configrun.sh
-        ./configrun.sh
+        ./configrun.sh 2>&1 > /tmp/zz.txt
     fi
 done
